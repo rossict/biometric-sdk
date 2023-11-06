@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-biometric-sdk" version="0.0.1">
+    <name>Biometric SDK</name>
+    <description>Cordova abstraction of the biometric Mobile Id SDK.</description>
+    <license>MIT</license>
+    <keywords>cordova,android,biometric,sdk</keywords>
+    <repo>https://github.com/rossict/biometric-sdk.git</repo>
+    <issue>https://github.com/rossict/biometric-sdk/issues</issue>
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+    <js-module src="www/toastyplugin.js" name="toastyPlugin">
+        <clobbers target="window.plugins.toastyPlugin" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="BiometricSDK">
+                <param name="android-package" value="com.askblue.cordova.plugin.BiometricSDK"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/BiometricSDK.java" target-dir="src/com/askblue/cordova/plugin" />
+    </platform>
+</plugin>

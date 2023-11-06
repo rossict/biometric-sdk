@@ -1,0 +1,38 @@
+{
+  "name": "com.askblue.biometricsdk",
+  "displayName": "BiometricSDK",
+  "version": "1.0.0",
+  "description": "Cordova abstraction of the biometric Mobile Id SDK.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Paulo Rossi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rossict/biometric-sdk/issues"
+  },
+  "homepage": "https://github.com/rossict/biometric-sdk/",
+  "devDependencies": {
+    "cordova-android": "^12.0.1"
+  },
+  "cordova": {
+    "id": "cordova-plugin-biometric-sdk",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rossict/biometric-sdk.git"
+  }
+}
